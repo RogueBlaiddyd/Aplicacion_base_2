@@ -17,11 +17,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:cardCornerRadius="25dp">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/logotipo" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="133dp"
+                android:layout_height="145dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -43,7 +52,8 @@
                 android:layout_width="269dp"
                 android:layout_height="204dp"
                 android:layout_marginTop="28dp"
-                android:text="TextView"
+                android:text="En este apartado, encontrara la localizacion de nuestra sucursal, ademas de un numero de telefono para que pueda contactarnos!"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -61,15 +71,34 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
             <LinearLayout
-                android:layout_width="270dp"
-                android:layout_height="78dp"
+                android:layout_width="195dp"
+                android:layout_height="62dp"
                 android:layout_marginTop="32dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.507"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8"></LinearLayout>
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/maps"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/call"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

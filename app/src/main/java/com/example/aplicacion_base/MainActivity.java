@@ -97,6 +97,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void info(View v){
+        Intent i = new Intent(this, Info_act.class);
+        startActivity(i);
+    }
+
     public void facebook(View v){
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse("https://www.facebook.com/"));
