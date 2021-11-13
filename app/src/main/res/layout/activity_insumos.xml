@@ -24,6 +24,7 @@
                 android:layout_width="224dp"
                 android:layout_height="61dp"
                 android:backgroundTint="#41A6F5"
+                android:onClick="calcular"
                 android:text="Calcular"
                 app:cornerRadius="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -69,8 +70,8 @@
 
             <TextView
                 android:id="@+id/calculoView"
-                android:layout_width="144dp"
-                android:layout_height="46dp"
+                android:layout_width="191dp"
+                android:layout_height="62dp"
                 android:layout_marginTop="60dp"
                 android:text="TextView"
                 app:layout_constraintEnd_toEndOf="parent"

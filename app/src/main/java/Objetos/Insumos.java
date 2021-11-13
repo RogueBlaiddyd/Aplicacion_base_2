@@ -49,4 +49,9 @@ public class Insumos {
     public void setPrecios(int[] precios) {
         this.precios = precios;
     }
+
+
+    public int agregarAdicional(int precio, int adicional){
+        return precio + adicional;
+    }
 }
