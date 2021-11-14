@@ -43,4 +43,11 @@ public class Home_act extends AppCompatActivity {
         i.putExtras(bun);
         startActivity(i);
     }
+
+    public void comprar(View v){
+        Intent i = new Intent(this, Comprar_act.class);
+        startActivity(i);
+    }
+
+
 }
