@@ -87,6 +87,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
+                    android:onClick="maps"
                     app:srcCompat="@drawable/maps"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -96,6 +97,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
+                    android:onClick="marcado"
                     app:srcCompat="@drawable/call"
                     tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
