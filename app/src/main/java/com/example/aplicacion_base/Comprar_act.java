@@ -120,7 +120,26 @@ public class Comprar_act extends AppCompatActivity {
     }
 
     public void actualizar(View v){
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "Cartas yugi", null, 1);
+        SQLiteDatabase db = admin.getWritableDatabase();
 
+        int aidi = Integer.parseInt(id.getText().toString());
+        String pro = producto.getText().toString();
+        String name = nombre.getText().toString();
+        int dinero = Integer.parseInt(saldo.getText().toString());
+
+        if(!id.equals("") && !producto.equals("") && !nombre.equals("") && !saldo.equals("")){
+            ContentValues cont = new ContentValues();
+            cont.put("producto", pro);
+            cont.put("saldo", dinero);
+
+            db.update("boleta", cont, "id="+aidi, null);
+            db.close();
+            clean();
+            Toast.makeText(getBaseContext(), "A actualizado los datos de: "+name, Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(getBaseContext(), "No ingrese campos vacios, por favor", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void eliminar(View v){
